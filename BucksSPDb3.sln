@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BucksSPDb3", "BucksSPDb3\BucksSPDb3.sqlproj", "{56C62875-B4AB-4FDB-9315-D9409BAB99AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56C62875-B4AB-4FDB-9315-D9409BAB99AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C62875-B4AB-4FDB-9315-D9409BAB99AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C62875-B4AB-4FDB-9315-D9409BAB99AF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{56C62875-B4AB-4FDB-9315-D9409BAB99AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C62875-B4AB-4FDB-9315-D9409BAB99AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C62875-B4AB-4FDB-9315-D9409BAB99AF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1844B9FA-6BE3-4F3B-9A1A-64C1D7882E6E}
+	EndGlobalSection
+EndGlobal
