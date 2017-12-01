@@ -3,6 +3,7 @@
     [LastName]       NVARCHAR (50) NULL,
     [FirstName]      NVARCHAR (50) NULL,
 	[MiddleName] NVARCHAR (50) NULL,
+	[Medical] NVARCHAR (50) NULL,
     [EnrollmentDate] DATETIME      NULL,
     PRIMARY KEY CLUSTERED ([StudentID] ASC)
 )
