@@ -59,11 +59,13 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Student.sql" />
     <Build Include="Course.sql" />
-    <Build Include="Enrollment.sql" />
+    <Build Include="Incidents.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="BucksSPDb3.refactorlog" />
   </ItemGroup>
 </Project>
