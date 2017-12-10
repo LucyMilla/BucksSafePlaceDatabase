@@ -4,11 +4,11 @@ USING (VALUES
 		(2, 'Hurt', 'Ben', 'Ten'),
 		(3, 'No Way Home', 'Dan', 'Trek')
 )
-AS SOURCE (IncidentID, Title, Firstname, Lastname)
+AS SOURCE (IncidentID, IncidentTitle, Firstname, Lastname)
 ON Target.IncidentID = Source.IncidentID
 WHEN NOT MATCHED BY TARGET THEN
-INSERT (Title, Firstname, Lastname)
-VALUES (Title, Firstname, Lastname);
+INSERT (IncidentTitle, Firstname, Lastname)
+VALUES (IncidentTitle, Firstname, Lastname);
 
 MERGE INTO Location AS Target
 USING (VALUES
@@ -19,5 +19,5 @@ USING (VALUES
 		AS SOURCE (LocationID, BusinessName, BusinessAddress, Postcode, TelephoneNumber)
 		ON Target.LocationID = Source.LocationID
 		WHEN NOT MATCHED BY TARGET THEN
-		INSERT(BusinessName)
-		VALUES(BusinessName);
+		INSERT(BusinessName, BusinessAddress)
+		VALUES(BusinessName, BusinessAddress);
