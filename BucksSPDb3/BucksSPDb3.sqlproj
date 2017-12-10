@@ -59,8 +59,8 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Course.sql" />
     <Build Include="Incidents.sql" />
+    <Build Include="Location.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />

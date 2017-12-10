@@ -1,16 +1,4 @@
-﻿MERGE INTO Course AS Target 
-USING (VALUES 
-        (1, 'Economics', 3), 
-        (2, 'Literature', 3), 
-        (3, 'Chemistry', 4)
-) 
-AS Source (CourseID, Title, Credits) 
-ON Target.CourseID = Source.CourseID 
-WHEN NOT MATCHED BY TARGET THEN 
-INSERT (Title, Credits) 
-VALUES (Title, Credits);
-
-MERGE INTO Incidents AS Target
+﻿MERGE INTO Incidents AS Target
 USING (VALUES
 		(1, 'Feeling Unwell', 'Donnie', 'Tibbettes'),
 		(2, 'Hurt', 'Ben', 'Ten'),
@@ -21,3 +9,15 @@ ON Target.IncidentID = Source.IncidentID
 WHEN NOT MATCHED BY TARGET THEN
 INSERT (Title, Firstname, Lastname)
 VALUES (Title, Firstname, Lastname);
+
+MERGE INTO Location AS Target
+USING (VALUES
+		(1, 'Rustys', ' 123 Fake Rd.', 'HW01 111', '0000121356'),
+		(2, 'Mcdonalds', ' 126 Fake Rd.', 'HW01 123', '00000225478'),
+		(3, 'Coffee Place', ' 129 Fake Rd.', 'HW01 125', '0000471569')
+		)
+		AS SOURCE (LocationID, BusinessName, BusinessAddress, Postcode, TelephoneNumber)
+		ON Target.LocationID = Source.LocationID
+		WHEN NOT MATCHED BY TARGET THEN
+		INSERT(BusinessName)
+		VALUES(BusinessName);

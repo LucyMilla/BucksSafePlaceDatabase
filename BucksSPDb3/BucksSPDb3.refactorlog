@@ -7,4 +7,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="IncidentID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="8d662eec-9244-4b45-8c95-e9d0471a5d1b" ChangeDateTime="12/10/2017 18:49:11">
+    <Property Name="ElementName" Value="[dbo].[Location].[Business Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Location]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BusinessName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a4a33c3b-29f3-413d-b21b-391d261b7e1a" ChangeDateTime="12/10/2017 18:49:16">
+    <Property Name="ElementName" Value="[dbo].[Location].[Telephone Number]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Location]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="TelephoneNumber" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9ecb8887-7ba0-41f0-91f3-0199a2f8638d" ChangeDateTime="12/10/2017 18:50:11">
+    <Property Name="ElementName" Value="[dbo].[Location].[Address]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Location]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value=" BusinessAddress" />
+  </Operation>
 </Operations>
