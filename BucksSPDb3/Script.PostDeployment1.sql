@@ -1,14 +1,14 @@
 ﻿MERGE INTO Incidents AS Target
 USING (VALUES
-		(1, 'Feeling Unwell', 'Donnie', 'Tibbettes','Unwell to walk home'),
-		(2, 'Hurt', 'Ben', 'Ten','Injured leg'),
-		(3, 'No Way Home', 'Dan', 'Trek', 'lift by friend')
+		(1, 'Feeling Unwell', 'High Wycombe','2017-12-22', 'Illness', 'Unwell to walk home'),
+		(2, 'Hurt', 'High Wycombe', '2017-12-10', 'Violence', 'Injured leg'),
+		(3, 'No Way Home', 'High Wycombe', '2017-11-5', 'Stranded', 'lift by friend')
 )
-AS SOURCE (IncidentID, IncidentTitle, Firstname, Lastname, Report)
+AS SOURCE (IncidentID, IncidentTitle, IncidentLocation, IncidentDate, Tag, Report)
 ON Target.IncidentID = Source.IncidentID
 WHEN NOT MATCHED BY TARGET THEN
-INSERT (IncidentTitle, Firstname, Lastname, Report)
-VALUES (IncidentTitle, Firstname, Lastname, Report);
+INSERT (IncidentTitle, IncidentLocation, IncidentDate, Tag, Report)
+VALUES (IncidentTitle, IncidentLocation, IncidentDate, Tag, Report);
 
 MERGE INTO Location AS Target
 USING (VALUES
